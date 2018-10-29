@@ -7,12 +7,6 @@ var heroSlider = document.querySelector("#hero-slider-top");
 var fixed = false;
 var fixPoint = getDistance();
 var yScrollPosition;
-// var readout = document.getElementById("readout");
-// var win = document.defaultView;
-// var landingTop = document.querySelector(".landing-wrapper");
-console.log(navImage.classList);
-
-
 
 function getDistance() {
   var topDistance = navBar.offsetTop;
@@ -24,8 +18,6 @@ window.onload = function () {
 };
 
 window.onscroll = function () {
-  console.log(`${navBar.clientHeight}px`);
-  
   var distance = getDistance() - window.pageYOffset;
   var offset = window.pageYOffset;
   // readout.innerHTML = fixPoint + "   " + distance + "   " + offset + "   " + fixed;
