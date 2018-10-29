@@ -52,7 +52,7 @@ window.addEventListener("DOMContentLoaded", scrollLoop, false);
 function scrollLoop() {
   yScrollPosition = window.scrollY;
   setTranslate(0, yScrollPosition * -0.3, landingBackground);
-  setTranslate(0, yScrollPosition * -0.15, heroSlider);
+  setTranslate(0, yScrollPosition * -0.08, heroSlider);
   requestAnimationFrame(scrollLoop);
 }
 
