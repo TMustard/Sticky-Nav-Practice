@@ -16,13 +16,16 @@ function getDistance() {
 }
 
 window.onscroll = function () {
+  console.log(`${navBar.clientHeight}px`);
+  
   var distance = getDistance() - window.pageYOffset;
   var offset = window.pageYOffset;
   // readout.innerHTML = fixPoint + "   " + distance + "   " + offset + "   " + fixed;
   if ((distance <= 0) && !fixed) {
     navBar.style.position = "fixed";
     navBar.style.top = "0px";
-    heroSlider.style.top = "5rem";
+    // will need to change with the nav height
+    heroSlider.style.top = `${navBar.clientHeight}px`;
     fixed = true;
   } else if (fixed && (offset <= fixPoint)) {
     navBar.style.position = "static";
