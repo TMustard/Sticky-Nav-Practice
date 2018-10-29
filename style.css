@@ -1,0 +1,130 @@
+/* body {
+    background-color: white !important;
+} */
+.wrapper {
+    background-color: white;
+    z-index: -2;
+}
+
+.hero{ 
+    top: -10vh;
+    background-color: white;
+    z-index: -1;
+}
+
+/* #rooms-gallery-banners {
+    background-color: white !important;
+}
+
+#testimonial {
+    background-color: white !important;
+} */
+
+
+.landing-img {
+    max-width: 70%;
+}
+
+#landing-logo {
+    top: 40vh;
+    /* height: 95rem; */
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    overflow: auto;
+}
+
+/* @media (min-height: 1024px) {
+    #landing-logo {
+        height: 95rem;
+    }
+}
+
+@media (min-height: 567px) {
+    #landing-logo {
+        height: 60rem;
+    }
+}
+
+@media (min-height: 730px) {
+    #landing-logo {
+        height: 75rem;
+    }
+} */
+
+#landing-bg {
+    background-image: url("landing-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-left: 0px;
+    position: fixed;
+    top: -45vh;
+    width: 100vw;
+    height: 100vw;
+    z-index: -2;
+    /* opacity: .75; */
+}
+
+@media (min-width: 1024px) {
+    #landing-bg {
+        background-size: contain;
+        overflow-y: hidden;
+    }
+}
+
+@media (max-width: 768px) {
+    #landing-bg {
+        min-height: 140vh;
+        
+    }
+}
+
+#transform-test {
+    transform: translate3d(10px, 20px, 0);
+}
+
+#topnav {
+    background-color: white;
+    overflow: hidden;
+    /* position: absolute; */
+    width: 100vw;
+    /* top: 60vh; */
+    display: flex;
+    justify-content: flex-start;
+}
+
+#topnav a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#readout {
+    /* background-color: white; */
+    position: fixed;
+    /* z-index: 100; */
+    bottom: 0;
+    right: 0;
+    /* width: 200px; */
+    /* height: 50px; */
+}
+
+#slider-container {
+    /* background-color: white; */
+    /* top: -10vh; */
+    /* z-index: -3; */
+}
+
