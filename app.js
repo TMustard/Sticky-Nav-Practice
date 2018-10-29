@@ -1,5 +1,7 @@
 var landingBackground = document.querySelector("#landing-bg");
-var navBar = document.querySelector("#topnav");
+// var navBar = document.querySelector("#topnav");
+var navBar = document.querySelector(".Navbar");
+var heroContainer = document.querySelector(".intro-scroll-down");
 var heroSlider = document.querySelector("#hero-slider-top");
 var fixed = false;
 var fixPoint = getDistance();
@@ -14,6 +16,10 @@ function getDistance() {
   var topDistance = navBar.offsetTop;
   return topDistance;
 }
+
+window.onload = function () {
+  navBar.style.width = `${heroContainer.clientWidth}px`;
+};
 
 window.onscroll = function () {
   console.log(`${navBar.clientHeight}px`);
@@ -47,3 +53,10 @@ function scrollLoop() {
   requestAnimationFrame(scrollLoop);
 }
 
+function classToggle() {
+  const navs = document.querySelectorAll(".Navbar__Items");
+  
+  navs.forEach(nav => nav.classList.toggle("Navbar__ToggleShow"));
+}
+document.querySelector(".Navbar__Link-toggle")
+  .addEventListener("click", classToggle);
