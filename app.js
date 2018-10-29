@@ -1,6 +1,7 @@
 var landingBackground = document.querySelector("#landing-bg");
 // var navBar = document.querySelector("#topnav");
 var navBar = document.querySelector(".Navbar_Wrapper");
+var navImage = document.querySelector(".Navbar_Image");
 var heroContainer = document.querySelector(".intro-scroll-down");
 var heroSlider = document.querySelector("#hero-slider-top");
 var fixed = false;
@@ -9,6 +10,7 @@ var yScrollPosition;
 // var readout = document.getElementById("readout");
 // var win = document.defaultView;
 // var landingTop = document.querySelector(".landing-wrapper");
+console.log(navImage.classList);
 
 
 
@@ -30,11 +32,12 @@ window.onscroll = function () {
   if ((distance <= 0) && !fixed) {
     navBar.style.position = "fixed";
     navBar.style.top = "0px";
-    // will need to change with the nav height
+    navImage.classList.add("Navbar_Image_Fade");
     heroSlider.style.top = `${navBar.clientHeight}px`;
     fixed = true;
   } else if (fixed && (offset <= fixPoint)) {
     navBar.style.position = "static";
+    navImage.classList.remove("Navbar_Image_Fade");
     heroSlider.style.top = "0px";
     fixed = false;
   }
