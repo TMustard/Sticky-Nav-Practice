@@ -48,7 +48,7 @@
 
 @media (max-width: 768px) {
     #landing-logo {
-        height: 90vh;
+        height: 100vh;
         
     }
 }
@@ -121,7 +121,6 @@
 
   .Navbar__Link {
     padding-right: 15px;
-    
   }
   .Navbar__Items {
     display: flex;
@@ -135,9 +134,13 @@
     display: none;
   }
   @media only screen and (max-width: 768px) {
+    .Navbar_Wrapper {
+        padding-bottom: 1.5rem;
+       
+    }  
     .Navbar {
         background-color:white;
-        max-width: 60vw
+        max-width: 60vw;
         /* min-width: 34rem; */
         /* margin-left: 1rem; */
     }
@@ -167,5 +170,6 @@
       display: initial;
       position: absolute;
       cursor: pointer;
+      box-shadow: 0px 0.7px 0px 0px rgba(0, 0, 0, 0.2);
      } 
   }

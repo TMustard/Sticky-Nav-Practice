@@ -1,6 +1,6 @@
 var landingBackground = document.querySelector("#landing-bg");
 // var navBar = document.querySelector("#topnav");
-var navBar = document.querySelector(".Navbar");
+var navBar = document.querySelector(".Navbar_Wrapper");
 var heroContainer = document.querySelector(".intro-scroll-down");
 var heroSlider = document.querySelector("#hero-slider-top");
 var fixed = false;
