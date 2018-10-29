@@ -99,7 +99,10 @@
     /* background-color: #4CAF50; */
     background-color: white;
     display: flex;
-    padding: 16px;
+    padding-top: .3rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem; 
+
     font-family: sans-serif;
     color: black;
     /* min-width: 66.09vw; */
