@@ -1,4 +1,5 @@
 var landingBackground = document.querySelector("#landing-bg");
+var siteWrapper = document.querySelector(".wrapper");
 // var navBar = document.querySelector("#topnav");
 var navBar = document.querySelector(".Navbar_Wrapper");
 var navImage = document.querySelector(".Navbar_Image");
@@ -45,6 +46,7 @@ function scrollLoop() {
   yScrollPosition = window.scrollY;
   setTranslate(0, yScrollPosition * -0.3, landingBackground);
   setTranslate(0, yScrollPosition * -0.08, heroSlider);
+  setTranslate(0, yScrollPosition * -0.08, siteWrapper);
   requestAnimationFrame(scrollLoop);
 }
 

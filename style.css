@@ -9,7 +9,10 @@
 } */
 
 .newsletter-outer-wrapper {
-    z-index: -2;
+    /* background-color: aqua;
+    z-index: -2; */
+    /* position: absolute; */
+    /* top: -20rem; */
 }
 
 /* @media (max-width: 768px) {
