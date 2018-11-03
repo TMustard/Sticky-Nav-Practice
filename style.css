@@ -1,6 +1,6 @@
 
 .wrapper {
-    background-color: white;
+    background-color:aqua;
     z-index: -2;
 }
 
@@ -8,32 +8,9 @@
     
 } */
 
-.newsletter-outer-wrapper {
-    /* background-color: aqua;
-    z-index: -2; */
-    /* position: absolute; */
-    /* top: -20rem; */
-}
-
-/* @media (max-width: 768px) {
-    #hero-slider-top {
-        width: 100vw;
-        
-    }
+/* .newsletter-outer-wrapper {
+ 
 } */
-
-
-
-
-
-/* #rooms-gallery-banners {
-    background-color: white !important;
-}
-
-#testimonial {
-    background-color: white !important;
-} */
-
 
 .landing-img {
     max-width: 70%;
@@ -154,10 +131,8 @@
   @media only screen and (max-width: 768px) {
     .Navbar_Wrapper {
         padding-bottom: 1.5rem;
-       
     }  
     .Navbar {
-        background-color:white;
         max-width: 60vw;
         /* min-width: 34rem; */
         /* margin-left: 1rem; */
@@ -170,7 +145,7 @@
         margin-left: 1rem;
     }
     .Navbar__Items,
-    .Navbar {
+    .Navbar {  
       flex-direction: column;
     }
   .Navbar__Items {
