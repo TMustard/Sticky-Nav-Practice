@@ -3,7 +3,7 @@ var siteWrapper = document.querySelector(".wrapper");
 // var navBar = document.querySelector("#topnav");
 var navBar = document.querySelector(".Navbar_Wrapper");
 var navImage = document.querySelector(".Navbar_Image");
-var heroContainer = document.querySelector(".intro-scroll-down");
+var heroContainer2 = document.querySelector("#slider-container");
 var heroSlider = document.querySelector("#hero-slider-top");
 var fixed = false;
 var fixPoint = getDistance();
@@ -15,7 +15,9 @@ function getDistance() {
 }
 
 window.onload = function () {
-  navBar.style.width = `${heroContainer.clientWidth}px`;
+  navBar.style.maxWidth = `${heroContainer2.clientWidth}px`;
+  console.log(`${navBar.clientWidth}px`);
+  console.log(`${heroContainer2.clientWidth}px`);
 };
 
 window.onscroll = function () {
@@ -45,7 +47,7 @@ window.addEventListener("DOMContentLoaded", scrollLoop, false);
 function scrollLoop() {
   yScrollPosition = window.scrollY;
   setTranslate(0, yScrollPosition * -0.3, landingBackground);
-  // setTranslate(0, yScrollPosition * -0.08, heroSlider);
+  setTranslate(0, yScrollPosition * -0.08, heroSlider);
   setTranslate(0, yScrollPosition * -0.08, siteWrapper);
   requestAnimationFrame(scrollLoop);
 }
